@@ -15,8 +15,8 @@ def extract_data():
 
     for row in lines:
         name = row[0].strip().lower()
-        number = int(row[1].strip())
-        datalist.append([name, number])
+        score = int(row[1].strip())
+        datalist.append([name, score])
     print(datalist)
     data.close()
     return datalist
